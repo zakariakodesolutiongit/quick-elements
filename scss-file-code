@@ -1,1 +1,4 @@
 background-image: url(../../../images/current-theme/service1-bg-pattern.png);
+
+
+@include transform(scale(1));
