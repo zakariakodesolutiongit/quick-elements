@@ -1,0 +1,6 @@
+<div class="rating">
+					<?php if ( $show_rating == 'yes' ) : ?>
+						<?php include( 'star-rating.php' ); ?>
+					<?php endif; ?>
+					<span class="avg-review"><?php echo esc_attr( $rating );?> <?php echo esc_html__('Reviews', 'mascot-core-mizox')?></span>
+				</div>
