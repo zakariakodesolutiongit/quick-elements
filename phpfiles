@@ -10,7 +10,7 @@
 <?php echo esc_html__('Reviews', 'mascot-core-mizox')?>
 
 
-========================= New coding with repeater ===================
+========================= New coding with repeater ====================
 <span class="rating-count"><?php echo esc_html($testimonial_item['rating']['size']);?></span>
 
 
