@@ -12,3 +12,20 @@
 
 ========================= New coding with repeater ===================
 <span class="rating-count"><?php echo esc_html($testimonial_item['rating']['size']);?></span>
+
+
+
+========================= Elementor Upload Image Code ===================
+$image[0] = '';
+if( isset($skin_style1_bg_object_image['id']) && !empty($skin_style1_bg_object_image['id']) ){
+	$image = wp_get_attachment_image_src( $skin_style1_bg_object_image['id'], 'full');
+}
+//if empty then use this default image
+if( empty($image[0])) {
+  $image[0] = MASCOT_CORE_DESIX_ASSETS_URI . '/images/current-theme/testimonial-shape.png';
+}
+?>
+
+<div class="content-box" style="--testimonial-style1-bg-image: url('<?php echo esc_url( $image[0] );?>')">
+	<?php mascot_core_desix_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
+</div>
