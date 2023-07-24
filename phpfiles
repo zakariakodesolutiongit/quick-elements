@@ -25,7 +25,9 @@ if( empty($image[0])) {
   $image[0] = MASCOT_CORE_DESIX_ASSETS_URI . '/images/current-theme/testimonial-shape.png';
 }
 ?>
-
+======== HTML ==========
 <div class="content-box" style="--testimonial-style1-bg-image: url('<?php echo esc_url( $image[0] );?>')">
 	<?php mascot_core_desix_get_shortcode_template_part( 'part-author-text', null, 'testimonial-block/tpl', $testimonial_item, false ); ?>
 </div>
+======== CSS ===========
+background-image: var(--testimonial-style1-bg-image);
