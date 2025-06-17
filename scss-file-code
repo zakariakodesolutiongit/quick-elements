@@ -1,5 +1,8 @@
 background-image: url(../../../images/current-theme/service1-bg-pattern.png);
 
+if ( class_exists( '\\Elementor\\Plugin' ) ) {
+	\\Elementor\\Plugin::instance()->files_manager->clear_cache();
+}
 
 @include transform(scale(1));
 
